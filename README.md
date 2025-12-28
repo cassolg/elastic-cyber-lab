@@ -35,6 +35,6 @@ This project is an ongoing cybersecurity lab focused on deploying and configurin
 ## 📸 Screenshots
 
 > ![Elastic Stack Config](images/elk-stack-setup)
-> ![Elastic Agent on Windows](images/elastic-agent-installed.png)
+> ![Certificate Authority](images/certificate-authority)
 
 *More to come: detection dashboards, simulated attacks, alerts.*
