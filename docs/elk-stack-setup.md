@@ -30,8 +30,9 @@ sudo apt update && sudo apt upgrade -y
 
 2.Add the Elastic APT repository and GPG key:
 
-curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/elastic.gpg
-echo "deb https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-8.x.list
+wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
+sudo apt-get install apt-transport-https
+echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-8.x.list
 sudo apt update
 
 3. Install Elasticsearch:
@@ -59,21 +60,23 @@ sudo systemctl start kibana
 8. Install Logstash:
 
 sudo apt install logstash -y
-Install and Configure Filebeat
+
+9. Install and Configure Filebeat
+
 sudo apt install filebeat -y
 
 
-9. Enable system module:
+10. Enable system module:
 
 sudo filebeat modules enable system
 
 
-10. Set up Filebeat (dashboards, ingest pipelines):
+11. Set up Filebeat (dashboards, ingest pipelines):
 
 sudo filebeat setup
 
 
-11. Start and enable the Filebeat service:
+12. Start and enable the Filebeat service:
 
 sudo systemctl enable filebeat
 sudo systemctl start filebeat
