@@ -34,7 +34,7 @@ This project is an ongoing cybersecurity lab focused on deploying and configurin
 
 ## 📸 Screenshots
 
-> ![Fleet Server TLS Config](images/fleet-tls-config.png)
+> ![Elastic Stack Config](images/elk-stack-setup)
 > ![Elastic Agent on Windows](images/elastic-agent-installed.png)
 
 *More to come: detection dashboards, simulated attacks, alerts.*
