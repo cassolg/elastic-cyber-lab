@@ -97,3 +97,6 @@ Uncomment this if you're running a single-node cluster, which you most likely ar
 Prevents cluster formation errors.
 
 Avoids bootstrap checks meant for multi-node deployments.
+
+### For more details
+Go to "images/elk-stack-setup/kibana"
