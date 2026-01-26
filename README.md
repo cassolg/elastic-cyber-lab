@@ -26,13 +26,28 @@ This project is an ongoing cybersecurity lab focused on deploying and configurin
 ---
 
 ##  Architecture
-[ Windows Server 2019 ] --> [ Fleet Server (TLS) ] --> [ Elasticsearch / Kibana ]
-↑
-[ CA + Certs ]
-
+```bash
+[ Kali Linux (Attacker) ]
+↓
+[ Metasploitable (Vulnerable Machine) ]
+↓ (Generates network traffic)
+[ Suricata (NIDS) ]
+↓ (Generates alerts)
+[ Logstash (Parses logs) ]
+↓
+[ Elasticsearch / Kibana (SIEM Stack) ]
+```
+```bash
+[ Windows 10 + Elastic Agent (Sysmon) ]
+↓ (Sends logs + receives policy)
+[ Fleet Server (via TLS) ]
+↓
+[ Elasticsearch / Kibana ]
+```
 ---
 
-<img width="1920" height="1080" alt="Elastic" src="https://github.com/user-attachments/assets/4db9f3b8-e4b6-478a-a200-6a247eefc48b" />
+
+<img width="1920" height="1080" alt="Elastic (1)" src="https://github.com/user-attachments/assets/7ccd6d72-7620-4dcf-b52c-ec7b510c4d9f" />
 
 
 
