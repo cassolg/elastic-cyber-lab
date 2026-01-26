@@ -32,7 +32,8 @@ This project is an ongoing cybersecurity lab focused on deploying and configurin
 
 ---
 
-<img width="1920" height="1080" alt="Kibana (1)" src="https://github.com/user-attachments/assets/9fc1f34f-1119-4f69-a61f-edee636f21d6" />
+<img width="1920" height="1080" alt="Elastic" src="https://github.com/user-attachments/assets/4db9f3b8-e4b6-478a-a200-6a247eefc48b" />
+
 
 
 *More to come: detection dashboards, simulated attacks, alerts.*
