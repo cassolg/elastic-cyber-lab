@@ -127,8 +127,9 @@ Elasticsearch is receiving Fleet-related data
 
 At this stage, the following agents were visible:
 
-Hostname	Policy	Status
-es01.soc.lab	Fleet Server Policy	Healthy
-DESKTOP-D6MDETS	windows-endpoint-policy	Healthy
-
+```yaml
+Hostname	                 Policy	                  Status
+es01.soc.lab	       Fleet Server Policy	          Healthy
+DESKTOP-D6MDETS   	windows-endpoint-policy         Healthy
+```
 This confirms successful Fleet Server operation and downstream agent enrollment.
