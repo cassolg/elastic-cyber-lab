@@ -8,10 +8,10 @@ Instead of using Elastic’s built-in TLS auto-configuration, this setup manuall
 
 ## Objective
 
-- Create a trusted internal CA using `elasticsearch-certutil`
-- Generate and sign certificates for Fleet Server using a **DNS-resolvable domain**
-- Secure Fleet Server communication using TLS
-- Ensure Elastic Agents and Kibana communicate over HTTPS
+- Created a trusted internal CA using `elasticsearch-certutil`
+- Generated and sign certificates for Fleet Server using a **DNS-resolvable domain**
+- Secured Fleet Server communication using TLS
+- Ensured Elastic Agents and Kibana communicate over HTTPS
 
 ---
 
@@ -29,23 +29,23 @@ Instead of using Elastic’s built-in TLS auto-configuration, this setup manuall
 
 ```bash
 
-Step 1: Generate a Certificate Authority (CA)
+Step 1: Generated a Certificate Authority (CA)
 elasticsearch-certutil ca --pem
 
-Step 2: Unzip and Organize the CA Files
+Step 2: Unzipped and Organized the CA Files
 unzip elastic-stack-ca.zip -d certs/ca
 Files are organized as:
 certs/ca/ca.crt
 certs/ca/ca.key
 
-Step 3: Generate a Certificate for Fleet Server (with DNS name)
+Step 3: Generated a Certificate for Fleet Server (with DNS name)
 elasticsearch-certutil cert --name fleet-server.yourdomain.local \
   --ca-cert certs/ca/ca.crt \
   --ca-key certs/ca/ca.key \
   --pem
 Note: The --name flag was set to a DNS domain (e.g., fleet-server.lab.local) instead of an IP address. This ensures that TLS validation works when Elastic Agents connect using a hostname.
 
-Step 4: Unzip and Organize Fleet Server Certs
+Step 4: Unzipped and Organized Fleet Server Certs
 unzip elastic-certificates.p12.zip -d certs/fleet
 Resulting files:
 certs/fleet/fleet-server.crt
@@ -77,15 +77,5 @@ elastic-agent install \
   --url=https://fleet-server.lab.local:8220
 ```
 
-## Screenshots
 
-All certificate generation steps are documented under:
-```bash
-/images/certificate-authority/
-```
 
-## Related Docs
-
-Fleet Server Setup
-
-ELK Stack Setup
