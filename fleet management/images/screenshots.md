@@ -4,6 +4,9 @@
 <img width="1158" height="602" alt="windows integration" src="https://github.com/user-attachments/assets/5cef00cc-216e-489a-b6c3-d6d12e1a574e" />
 <img width="1156" height="602" alt="windows integration 3" src="https://github.com/user-attachments/assets/39515261-8132-42df-8944-6a0656d3fa58" />
 <img width="1160" height="600" alt="windows integration 2" src="https://github.com/user-attachments/assets/896c9e39-d142-4361-89fb-fc8c17f5cbdc" />
+<img width="642" height="138" alt="Captura de tela 2026-02-01 123231" src="https://github.com/user-attachments/assets/76ae3595-86ec-4e32-98b7-f824275d3b70" />
+<img width="736" height="44" alt="Captura de tela 2026-02-01 123551" src="https://github.com/user-attachments/assets/afca6a34-1d53-4aea-a204-83fb554adb9d" />
+
 
 ---
 
