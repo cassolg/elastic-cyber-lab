@@ -155,3 +155,7 @@ Network telemetry (Suricata IDS)
 Centralized analysis in Elastic SIEM
 
 This provided realistic SOC visibility into attacker behavior and laid the foundation for detection engineering and alert development.
+
+<img width="976" height="644" alt="hypervisor setup" src="https://github.com/user-attachments/assets/5a832759-86b9-4be9-a278-2f012b3d5029" />
+
+
