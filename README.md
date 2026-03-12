@@ -44,7 +44,8 @@ This project is an ongoing cybersecurity lab focused on deploying and configurin
 [ Elasticsearch / Kibana ]
 ```
 
-<img width="1920" height="1080" alt="Elastic" src="https://github.com/user-attachments/assets/08215972-d0a9-4561-924a-4bb7b40a7417" />
+<img width="1920" height="1080" alt="Elastic (2)" src="https://github.com/user-attachments/assets/1de6042e-2f5d-4081-84f6-26df5b6b818b" />
+
 
 ---
 
